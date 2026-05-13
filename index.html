@@ -68,12 +68,6 @@
       </div>
     </div>
 
-    <!-- Name -->
-    <div class="name-section">
-      <div class="title-tag">The Legend</div>
-      <div class="name">Vijay Thalapathy</div>
-      <div class="nickname">Joseph Vijay Chandrasekhar</div>
-    </div>
 
     <!-- Divider -->
     <div class="divider">
@@ -114,48 +108,10 @@
       <a class="social-btn" href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
     </div>
 
-    <!-- Bottom stamp -->
-    <div class="bottom-stamp">Kollywood Icon &nbsp;&bull;&nbsp; Tamil Nadu</div>
-
+    
   </div>
 </div>
 
-<script>
-  // Create floating gold particles
-  const container = document.getElementById('particles');
-  for (let i = 0; i < 28; i++) {
-    const p = document.createElement('div');
-    p.className = 'particle';
-    p.style.setProperty('--x', Math.random() * 100 + 'vw');
-    p.style.setProperty('--dur', (6 + Math.random() * 10) + 's');
-    p.style.setProperty('--delay', (Math.random() * 8) + 's');
-    p.style.width = (1 + Math.random() * 2) + 'px';
-    p.style.height = p.style.width;
-    container.appendChild(p);
-  }
-
-  // Subtle 3D tilt on mouse move
-  const card = document.getElementById('card');
-  document.addEventListener('mousemove', (e) => {
-    const rect = card.getBoundingClientRect();
-    const cx = rect.left + rect.width / 2;
-    const cy = rect.top + rect.height / 2;
-    const dx = (e.clientX - cx) / window.innerWidth;
-    const dy = (e.clientY - cy) / window.innerHeight;
-    card.style.transform = `
-      perspective(1200px)
-      rotateY(${dx * 8}deg)
-      rotateX(${-dy * 6}deg)
-      translateY(-4px) scale(1.01)
-    `;
-  });
-
-  document.addEventListener('mouseleave', () => {
-    card.style.transform = '';
-  });
-</script>
-</body>
-</html>
 
     <a href="https://instagram.com/@actorvijay" target="_blank">
       vijay thalapathy
