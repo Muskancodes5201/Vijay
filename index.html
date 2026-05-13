@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>vijay Card</title>
+  <title>vijay ji</title>
 
   <style>
 
@@ -61,6 +61,101 @@
   <div class="card">
 
     <img src="vijay.png" alt="vijay thalapathy">
+     <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+      </div>
+    </div>
+
+    <!-- Name -->
+    <div class="name-section">
+      <div class="title-tag">The Legend</div>
+      <div class="name">Vijay Thalapathy</div>
+      <div class="nickname">Joseph Vijay Chandrasekhar</div>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-diamond"></div>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">67+</div>
+        <div class="stat-label">Films</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">30+</div>
+        <div class="stat-label">Years</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">100M+</div>
+        <div class="stat-label">Fans</div>
+      </div>
+    </div>
+
+    <!-- Tags -->
+    <div class="tags">
+      <span class="tag"><i class="fa-solid fa-film"></i> Actor</span>
+      <span class="tag"><i class="fa-solid fa-music"></i> Singer</span>
+      <span class="tag"><i class="fa-solid fa-masks-theater"></i> Producer</span>
+      <span class="tag"><i class="fa-solid fa-flag"></i> Politician</span>
+    </div>
+
+    <!-- Social -->
+    <div class="social-row">
+      <a class="social-btn" href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a class="social-btn" href="#" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a class="social-btn" href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a class="social-btn" href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+
+    <!-- Bottom stamp -->
+    <div class="bottom-stamp">Kollywood Icon &nbsp;&bull;&nbsp; Tamil Nadu</div>
+
+  </div>
+</div>
+
+<script>
+  // Create floating gold particles
+  const container = document.getElementById('particles');
+  for (let i = 0; i < 28; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.setProperty('--x', Math.random() * 100 + 'vw');
+    p.style.setProperty('--dur', (6 + Math.random() * 10) + 's');
+    p.style.setProperty('--delay', (Math.random() * 8) + 's');
+    p.style.width = (1 + Math.random() * 2) + 'px';
+    p.style.height = p.style.width;
+    container.appendChild(p);
+  }
+
+  // Subtle 3D tilt on mouse move
+  const card = document.getElementById('card');
+  document.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const cx = rect.left + rect.width / 2;
+    const cy = rect.top + rect.height / 2;
+    const dx = (e.clientX - cx) / window.innerWidth;
+    const dy = (e.clientY - cy) / window.innerHeight;
+    card.style.transform = `
+      perspective(1200px)
+      rotateY(${dx * 8}deg)
+      rotateX(${-dy * 6}deg)
+      translateY(-4px) scale(1.01)
+    `;
+  });
+
+  document.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+</script>
+</body>
+</html>
 
     <a href="https://instagram.com/@actorvijay" target="_blank">
       vijay thalapathy
